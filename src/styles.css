@@ -1,0 +1,285 @@
+/* Paleta de colores para landing page de psicólogo online */
+
+:root {
+  /* Colores base */
+  --azul-pastel: #A8D8F0;
+  --turquesa: #4ECDC4;
+  --azul-oscuro: #2A6F97;
+  --blanco-suave: #F7FBFC;
+  --gris-azulado: #D6E6F2;
+  
+  /* Colores adicionales */
+  --azul-pastel-claro: #E1F1FA;
+  --azul-pastel-muy-claro: #C5E4F3;
+  --blanco: #FFFFFF;
+  
+  /* Fuentes */
+  --fuente-principal: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --fuente-titulos: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilos generales */
+body {
+  font-family: var(--fuente-principal);
+  color: var(--azul-oscuro);
+  background-color: var(--azul-pastel-muy-claro);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--fuente-titulos);
+  color: var(--azul-oscuro);
+}
+
+/* Header */
+header {
+  background: linear-gradient(to bottom, var(--azul-pastel), var(--blanco-suave));
+  padding: 4rem 0;
+}
+
+header h1 {
+  color: var(--azul-oscuro);
+  font-weight: 700;
+}
+
+header p {
+  color: var(--azul-oscuro);
+  opacity: 0.9;
+}
+
+/* Botones */
+.btn-primary {
+  background-color: var(--turquesa);
+  border-color: var(--turquesa);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #3dbdb5;
+  border-color: #3dbdb5;
+}
+
+.btn-outline {
+  border: 2px solid var(--turquesa);
+  color: var(--turquesa);
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: var(--turquesa);
+  color: white;
+}
+
+/* Secciones */
+section {
+  padding: 4rem 0;
+}
+
+section.bg-light {
+  background-color: var(--azul-pastel-claro);
+}
+
+section.bg-primary {
+  background-color: var(--azul-pastel);
+  color: var(--azul-oscuro);
+}
+
+/* Tarjetas */
+.card {
+  border-radius: 8px;
+  border: 1px solid var(--gris-azulado);
+  background-color: var(--azul-pastel-muy-claro);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: var(--azul-oscuro);
+  font-weight: 600;
+}
+
+/* Iconos */
+.icon {
+  color: var(--turquesa);
+}
+
+/* Testimonios */
+.testimonial {
+  background-color: var(--azul-pastel-muy-claro);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial-quote {
+  color: var(--turquesa);
+  font-size: 1.5rem;
+}
+
+/* Formulario */
+.form-control {
+  border: 1px solid var(--gris-azulado);
+  border-radius: 4px;
+  background-color: var(--azul-pastel-muy-claro);
+}
+
+.form-control:focus {
+  border-color: var(--turquesa);
+  box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, 0.25);
+}
+
+/* Footer */
+footer {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 3rem 0;
+}
+
+footer a {
+  color: var(--azul-pastel-muy-claro);
+}
+
+footer a:hover {
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+/* Sección de ayuda terapia online */
+.help-section {
+  background-color: var(--azul-pastel-claro);
+  padding: 4rem 0;
+}
+
+.help-card {
+  background-color: var(--azul-pastel-muy-claro);
+  border-radius: 8px;
+  border: 1px solid var(--gris-azulado);
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.help-card:hover {
+  transform: translateY(-5px);
+}
+
+.help-icon {
+  background-color: var(--azul-pastel);
+  color: var(--turquesa);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+/* Sobre mí */
+.about-section {
+  background-color: var(--azul-pastel-claro);
+}
+
+.profile-image {
+  border-radius: 50%;
+  border: 4px solid var(--azul-pastel-muy-claro);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Servicios */
+.services-section {
+  background-color: var(--azul-pastel);
+}
+
+.service-card {
+  background-color: var(--azul-pastel-muy-claro);
+  border-radius: 8px;
+  border: 1px solid var(--gris-azulado);
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Posts */
+.posts-section {
+  background-color: var(--azul-pastel-claro);
+}
+
+.post-card {
+  background-color: var(--azul-pastel-muy-claro);
+  border-radius: 8px;
+  border: 1px solid var(--gris-azulado);
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* Ventajas */
+.benefits-section {
+  background-color: var(--azul-pastel);
+}
+
+.benefit-card {
+  background-color: var(--azul-pastel-muy-claro);
+  border-radius: 8px;
+  border: 1px solid var(--gris-azulado);
+  padding: 1.5rem;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* FAQ */
+.faq-section {
+  background-color: var(--azul-pastel-claro);
+}
+
+.faq-item {
+  background-color: var(--azul-pastel-muy-claro);
+  border-radius: 8px;
+  border: 1px solid var(--gris-azulado);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+/* Contacto */
+.contact-section {
+  background-color: var(--azul-pastel);
+}
+
+.contact-form {
+  background-color: var(--azul-pastel-muy-claro);
+  border-radius: 8px;
+  border: 1px solid var(--gris-azulado);
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Accesibilidad */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 0;
+  }
+  
+  section {
+    padding: 2rem 0;
+  }
+}
