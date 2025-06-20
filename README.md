@@ -48,3 +48,34 @@ export default tseslint.config({
   },
 })
 ```
+
+
+
+Descomprime el archivo ZIP en tu ordenador
+Instala las dependencias:
+
+cd landing_psicologo_app
+npm install
+# o si prefieres usar pnpm
+pnpm install
+
+Inicia el servidor de desarrollo:
+
+npm run dev
+# o con pnpm
+pnpm run dev
+
+Esto iniciará el servidor local en http://localhost:5173
+Para modificar el contenido:
+    Edita el archivo src/textos.ts para cambiar los textos
+    Modifica los componentes en src/components/ para ajustar la estructura
+    Actualiza src/styles.css para personalizar los estilos y colores
+Para generar una nueva versión compilada:
+
+npm run build
+# o con pnpm
+pnpm run build
+
+La versión compilada se generará en la carpeta dist
+Para desplegar en producción:
+Puedes subir el contenido de la carpeta dist a cualquier servicio de hosting de sitios estáticos como Netlify, Vercel, GitHub Pages, etc.
