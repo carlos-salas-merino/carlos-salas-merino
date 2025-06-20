@@ -6,7 +6,7 @@ const Header = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold mb-3">Terapia Psicológica Online</h1>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-6">Dr. [Nombre] - Especialista en Ansiedad</h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6">Dr. [Nombre Completo] - Especialista en Ansiedad</h2>
             <p className="text-xl md:text-2xl mb-10">Atención especializada en ansiedad, depresión y bienestar emocional desde cualquier lugar. Terapia Cognitivo-Conductual efectiva y accesible.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <button className="bg-turquesa hover:bg-turquesa/90 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
